@@ -1,14 +1,12 @@
 import React from 'react'
 import Layout from "../components/layout"
 import Head from "../components/head"
-import Amsterdam from "../pictures/amsterdam13.jpg"
-import austria14 from "../pictures/austria14.jpg"
-import austria15 from "../pictures/austria15.jpg"
-import paris from "../pictures/paris12.jpg"
-import wieden from "../pictures/wieden12.jpg"
-import Image from "../components/image"
-console.log(Amsterdam)
-const About = () => {
+import Img from 'gatsby-image'
+
+
+
+
+const About = props => {
     return (
         <Layout>
             <Head title="O mnie"/>
@@ -22,21 +20,53 @@ const About = () => {
                             wracamy do galerii.<br /> No i na koniec może nieco banalna refleksja, która mi się nasunęła podczas wybierania i przygotowywania tych zdjęć: <em>czasy się zmieniają, a my razem z nimi...</em> </p>
     
         </div> 
-        <span style = {{ display: 'flex', alignItems: 'center' }}>
-        <img src= {Amsterdam} alt= "Amsterdam" style= {{margin: '0 5px'}}/>< br />
-        <img src= {austria14} alt= "Amsterdam"style= {{margin: '0 5px'}}/>< br />
-        <img src= {austria15} alt= "Amsterdam"style= {{margin: '0 5px'}}/>< br />
-        <img src= {paris} alt= "Amsterdam"style= {{margin: '0 px'}}/>< br />
-        <img src= {wieden} alt= "Amsterdam"style= {{margin: '0 10px'}}/>< br />
-        
-        </span>
+        <div style = {{ display: 'flex' }}>
+        <div style={{ maxWidth: `600px`, margin: '1rem', flex: '1'}}>
+      
+      <Img fluid={props.data.am13.childImageSharp.fluid} />
+      </div>
+      <div style={{ maxWidth: `600px`, margin: '1rem', flex: '1'}}>
+       <Img fluid={props.data.au14.childImageSharp.fluid} />
+       </div>
+           
+       <div style={{ maxWidth: `600px`, margin: '1rem', flex: 1}}>
+       <Img fluid={props.data.au15.childImageSharp.fluid} /> 
+       </div>
 
-       <div style={{ maxWidth: `500px`, margin: `1.45rem` }}>
-      <Image />
-    </div>
-          
+     
+   
+      
+        
+        </div>
+      
+      
+         
         </Layout>
     )
 }
 
 export default About 
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`
+export const pageQuery = graphql`
+  query {
+    am13: file(relativePath: { eq: "amsterdam13.jpg" }) {
+      ...fluidImage
+    }
+    au14: file(relativePath: { eq: "austria14.jpg" }) {
+      ...fluidImage
+    }
+    au15: file(relativePath: { eq: "austria15.jpg" }) {
+      ...fluidImage
+    }
+  }
+`
+
