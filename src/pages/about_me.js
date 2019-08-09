@@ -6,6 +6,7 @@ import austria14 from "../pictures/austria14.jpg"
 import austria15 from "../pictures/austria15.jpg"
 import paris from "../pictures/paris12.jpg"
 import wieden from "../pictures/wieden12.jpg"
+import Image from "../components/image"
 console.log(Amsterdam)
 const About = () => {
     return (
@@ -27,7 +28,12 @@ const About = () => {
         <img src= {austria15} alt= "Amsterdam"style= {{margin: '0 5px'}}/>< br />
         <img src= {paris} alt= "Amsterdam"style= {{margin: '0 px'}}/>< br />
         <img src= {wieden} alt= "Amsterdam"style= {{margin: '0 10px'}}/>< br />
+        
         </span>
+
+       <div style={{ maxWidth: `500px`, margin: `1.45rem` }}>
+      <Image />
+    </div>
           
         </Layout>
     )
