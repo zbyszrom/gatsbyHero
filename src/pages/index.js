@@ -8,26 +8,27 @@ import indexStyles from "./index.module.scss"
 
 const IndexPage = () => {
     return (
-       <div>
-            <Head title="Hero"/>
-            <div className={indexStyles.image}> 
-             <Layout>  
+        <div className={indexStyles.container}> 
         <header className={indexStyles.header}>
+        <div className={indexStyles.image}> 
+            <Head title="Hero"/>
+            
+             <Layout>  
+        
         
         <h2>   
             <Link className={indexStyles.title} to="/about_films">Moje prace</Link> 
         </h2>
-         
-        
-         
-        
-         
-        
-          
-      </header> 
+            
+      
       </Layout>
+
+      
+     
       </div>
+      </header>
       </div>
+     
       
     )
 }

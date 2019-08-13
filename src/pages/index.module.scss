@@ -1,9 +1,25 @@
-
-.header {
-
-    padding: 1rem 0 3rem;
-    height: 100%;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+.header {    
+    width: 100%;
+    max-width: 1500px; 
+    height: 100%;     
+}
+
+.image {
+    background-image: url(../pictures/paris12.jpg);     
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center center;
+    background-attachment: fixed;   
+    }
 
 .title {
     color: #500c0c;
@@ -19,21 +35,6 @@
     opacity: 1;
     text-decoration: underline;
 }
-.image {
-    background-image: url(../pictures/paris12.jpg); 
-    /* Full height */
-   
-    position: absolute; 
-    left: 0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    
-    /* Center and scale the image nicely */
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    }
+
 
 
