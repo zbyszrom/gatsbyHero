@@ -6,7 +6,10 @@ const Navbar = () => {
         <nav>
             <ul className={navbarStyles.navList}>
                 <li>
-                    <Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem}to="/"> O moich filmach </ Link>
+                    <Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem}to="/"> Początek </ Link>
+                </li>
+                <li>
+                <Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="about_films"> O moich filmach </ Link>
                 </li>
                 <li>
                     <Link to="#"> Podróze </ Link>
