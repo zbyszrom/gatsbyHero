@@ -1,8 +1,7 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .header {    
@@ -22,18 +21,19 @@
     }
 
 .title {
-    color: #500c0c;
-    font-size: 5rem;
+    color: #333333;
+    font-size: 7rem;
+    
     text-decoration: none;
     position: absolute;
     top:40%;
     left: 40%;
-    opacity: .6;    
+       
 }
 .title:hover {
-    color: #333333;
-    opacity: 1;
-    text-decoration: underline;
+    color: #500c0c;
+    
+   
 }
 
 
