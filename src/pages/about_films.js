@@ -19,10 +19,13 @@ const IndexPage = () => {
       }`)
     return (
         <Layout>
+         
             <Head title="Strona główna"/>
+            
             <h1>O moich filmach</h1>
-            <p>Cześć, mam na imię Zbigniew. Moje hobby to fotografia, krótkie filmy, oraz tłumaczenie piosenek i poezji z angielskiego </p>
-            <p>Witam serdecznie wszystkich odwiedzających moją stronę</p>
+            <h3>Cześć, mam na imię Zbigniew.<br/> Moje hobby to fotografia, krótkie filmy, oraz tłumaczenie piosenek i poezji z angielskiego. <br/>
+            Witam serdecznie wszystkich odwiedzających moją stronę</h3>
+           
             <h1>Wybrane filmy</h1>
             <ol>
                 {data.allVideoLinksJson.edges.map((edge) => {
@@ -38,6 +41,7 @@ const IndexPage = () => {
                     )
                 })}
             </ol>
+           
         </Layout>
     )
 }
