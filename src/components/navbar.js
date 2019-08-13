@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from "gatsby"
-
+import navbarStyles from './navbar.module.scss'
 const Navbar = () => {
     return (
         <nav>
-            <ul>
+            <ul className={navbarStyles.navList}>
                 <li>
-                    <Link to="/"> O moich filmach </ Link>
+                    <Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem}to="/"> O moich filmach </ Link>
                 </li>
                 <li>
                     <Link to="#"> Podróze </ Link>
@@ -23,13 +23,13 @@ const Navbar = () => {
                     </ul>
                 </li>
                 <li>
-                    <Link to="#"> Reportaze i inne </ Link>
+                <Link  to="#"> Reportaze i inne </ Link>
                     <ul>
                     <li>
-                    <Link to="reports"> Reportaze </ Link>
+                    <Link  to="reports"> Reportaze </ Link>
                     </li>
                     <li>
-                    <Link to="songs"> Do piosenek </ Link>
+                    <Link  to="songs"> Do piosenek </ Link>
                     </li>
                     <li>
                     <Link to="misc"> Inne </ Link>
@@ -38,16 +38,16 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                    <Link to="about_me"> O mnie </ Link>
+                <Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="about_me"> O mnie </ Link>
                 </li>
                 <li>
-                    <Link to="contact"> Kontakt </ Link>
+                <Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="contact"> Kontakt </ Link>
                 </li>
                 <li>
-                    <Link to="ebooks"> E-booki</ Link>
+                <Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="ebooks"> E-booki</ Link>
                 </li>
                 <li>
-                    <Link to="album"> Album </ Link>
+                <Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="album"> Album </ Link>
                 </li>
             </ul>
             

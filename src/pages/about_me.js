@@ -21,15 +21,15 @@ const About = props => {
     
         </div> 
         <div style = {{ display: 'flex' }}>
-        <div style={{ maxWidth: `600px`, margin: '1rem', flex: '1'}}>
+        <div style={{ maxWidth: `600px`, margin: '2rem .5rem', flex: '1'}}>
       
       <Img fluid={props.data.am13.childImageSharp.fluid} />
       </div>
-      <div style={{ maxWidth: `600px`, margin: '1rem', flex: '1'}}>
+      <div style={{ maxWidth: `600px`, margin: '2rem .5rem', flex: '1'}}>
        <Img fluid={props.data.au14.childImageSharp.fluid} />
        </div>
            
-       <div style={{ maxWidth: `600px`, margin: '1rem', flex: 1}}>
+       <div style={{ maxWidth: `600px`, margin: '2rem .5rem', flex: 1}}>
        <Img fluid={props.data.au15.childImageSharp.fluid} /> 
        </div>
 
