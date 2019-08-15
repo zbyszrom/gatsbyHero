@@ -1,15 +1,17 @@
 .nav-list {
     display: flex;
     list-style-type: none;
-    margin: 0;
-    justify-content: center; 
+    max-width: 1280px;
+    
+    
 }
 
 .nav-item {
     color: #999999;
-    font-size: 1.2rem;
-    margin-right: 1.3rem;
+    font-size: 1rem;
+    margin-right: 1rem;
     text-decoration: none;
+    padding: 5px;
 }
 
 .nav-item:hover {
@@ -19,3 +21,24 @@
 .active-nav-item {
     color: #333333;
 }
+
+@media all and (max-width: 750px) {  
+    
+    .nav-list {  
+        flex-wrap: wrap;   
+    }  
+    }
+    @media all and (max-width: 600px) {  
+       
+        .nav-list > li {
+        flex-basis: 25%;
+        }   
+  }
+  @media all and (max-width: 400px) {  
+       
+    .nav-list > li {
+    flex-basis: 100%;
+    }   
+}
+
+ 
