@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Layout from "../components/layout"
 import Head from "../components/head"
 import { Link } from 'gatsby'
 import '../styles/index.scss'
@@ -10,7 +10,7 @@ const TestPage = () => {
     <div>    
     <Head title="Hero"/>
             
-    
+    <Layout>    
         
     <nav className="menu">
   <ul>
@@ -21,29 +21,35 @@ const TestPage = () => {
         <Link to="about_films">Wybrane</Link>
     </li>
     <li className="sub-menu">
-    
-    
     <Link to ="/">Podróze</Link>
     
       
       <ul>
-          <li><Link to="america">Ameryka</Link></li>
-          <li><Link to="europe">Europa</Link></li>
-          <li><Link to="poland">Polska</Link></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Bio</a></li>
       </ul>
     
     </li>
     <li className="sub-menu">
-    <Link to ="/">Rózne</Link>
+    <Link to ="/">Podróze</Link>
     
       
       <ul>
-          <li><Link to="reports">Reportaze</Link></li>
-          <li><Link to="misc">Inne</Link></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Bio</a></li>
       </ul>
     
     </li>
+    <li className="sub-menu">
+    <Link to ="/">Podróze</Link>
+    
       
+      <ul>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Bio</a></li>
+      </ul>
+    
+    </li>    
     <li>
     <Link to ="about_me">O mnie</Link>
     </li>
@@ -60,7 +66,7 @@ const TestPage = () => {
 </nav>
 
                   
-   
+    </Layout>
 
     </div> 
      
