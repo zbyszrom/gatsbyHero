@@ -26,6 +26,7 @@ const IndexPage = () => {
             <h3>Cześć, mam na imię Zbigniew.<br/> Moje hobby to fotografia, krótkie filmy, oraz tłumaczenie piosenek i poezji z angielskiego. <br/>
             Witam serdecznie wszystkich odwiedzających moją stronę</h3>
            
+           
             <h1>Wybrane filmy</h1>
             <ol>
                 {data.allVideoLinksJson.edges.map((edge) => {

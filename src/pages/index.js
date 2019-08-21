@@ -19,8 +19,8 @@ const IndexPage = () => {
         <h2>   
             <Link className={indexStyles.title} to="/about_films">Moje prace</Link> 
         </h2>
-            
-      
+    .Link
+        
       </Layout>
 
       

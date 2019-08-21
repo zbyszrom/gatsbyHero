@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Head from "../components/head"
+import Head from "./head"
 import { Link } from 'gatsby'
 import '../styles/index.scss'
 
@@ -10,9 +10,10 @@ const TestPage = () => {
     <div>    
     <Head title="Hero"/>
             
-    
+   
         
-    <nav className="menu">
+    <nav className="nav__menu">
+   
   <ul>
     <li>
         <Link to ="/">Początek</Link>
@@ -20,7 +21,7 @@ const TestPage = () => {
     <li>
         <Link to="about_films">Wybrane</Link>
     </li>
-    <li className="sub-menu">
+    <li className="nav__sub-menu">
     
     
     <Link to ="/">Podróze</Link>
@@ -33,7 +34,7 @@ const TestPage = () => {
       </ul>
     
     </li>
-    <li className="sub-menu">
+    <li className="nav__sub-menu">
     <Link to ="/">Rózne</Link>
     
       
@@ -59,7 +60,7 @@ const TestPage = () => {
   </ul>
 </nav>
 
-                  
+             
    
 
     </div> 
