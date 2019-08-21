@@ -1,0 +1,43 @@
+.hero-container {
+    background-image: url(../pictures/paris12.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+   
+}
+
+.hero-header { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        
+    width: 100%;
+    max-width: 1280x; 
+    height: 100%;     
+}
+
+
+.hero-title {
+    color: #333333;
+    font-size: 5rem;
+    
+    text-decoration: none;
+    position: absolute;
+    top:40%;
+    left: 40%;
+       
+}
+.hero-title:hover {
+    color: #500c0c;
+    
+   
+}

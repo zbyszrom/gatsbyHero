@@ -1,6 +1,5 @@
 import React from 'react'
-import Navbar from "../components/navbar"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 import Head from "../components/head"
 import { Link } from 'gatsby'
 import '../styles/index.scss'
@@ -12,21 +11,29 @@ const IndexPage = () => {
     return (
 <div>
 
-
-
-        <Head title="Hero"/>
-        <div className="hero-container ">
+        <Layout >
         
+        <Head title="Hero"/>
+        <div className="hero-container "> 
         <header className="hero-header">
-        <Navbar />
-        <h1 className="hero-title">      
-            <Link  className="hero-title" to="/about_films">Moje prace</Link>
-            </h1>
-       <Footer />
+        
+        <h1 className="">     
+            <Link  className="hero-title hero-image" to="/about_films">Moje prace</Link>
+        </h1>
+        
+
+       
+       
+    
+        
+      
+
+      
+     
+      
       </header>
-      
       </div>
-      
+      </Layout>
       </div>
      
       
