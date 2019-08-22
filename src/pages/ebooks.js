@@ -1,14 +1,17 @@
 import React from 'react'
 import Layout from "../components/layout"
 import Head from "../components/head"
+import '../styles/index.scss'
+
 import antek from "../assets/antek2e.pdf"
 import essays from "../assets/essays.pdf"
+
 const Ebooks = () => {
     return (
         <Layout>
             <Head title="e-booki"/>
             <h1>E booki</h1>
-            <div className="text">
+            <div className="">
                     <h2>Buława marszałkowska</h2>
                     <h4>Mini - opowiadania</h4>
                     <p><em>(1939- 1948)</em></p>
@@ -25,7 +28,7 @@ const Ebooks = () => {
                     <p><em>fragment</em></p>
             </div>
             <a href = {antek} target="_blank">Antek</a><br></br>
-            <div className="text"><br></br>
+            <div className=""><br></br>
             <h2>Eseje</h2>
             <h4>Szkice historyczno - polityczne</h4>
             <p><em>(2913 - 2015)</em></p>

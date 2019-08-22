@@ -4,9 +4,7 @@ import Footer from "../components/footer"
 import Head from "../components/head"
 import { Link } from 'gatsby'
 import '../styles/index.scss'
-import bgimage from '../pictures/paris12.jpg'
 
-import indexStyles from "./index.module.scss"
 
 const IndexPage = () => {
     return (

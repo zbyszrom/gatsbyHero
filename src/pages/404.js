@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Head from "../components/head"
+import '../styles/index.scss'
 
 const NotFound = () => {
     return (
