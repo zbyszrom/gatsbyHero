@@ -8,7 +8,7 @@ import '../styles/index.scss'
 
 const IndexPage = () => {
     return (
-<div>
+<div className="page">
 
 
 

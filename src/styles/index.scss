@@ -2,34 +2,11 @@
 @import './navbar';
 @import './layout';
 @import './hero';
+@import './vid-layout';
 
-  embed {
-    margin-top: 2.5rem;
-    position: center center;
-  }
+
+
  
-  .nav-list {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    justify-content: center; 
-}
-
-.nav-item {
-    color: #999999;
-    font-size: 1rem;
-    margin-right: 1rem;
-    text-decoration: none;
-    padding: 5px;
-}
-
-.nav-item:hover {
-    color: #666666;
-}
-
-.active-nav-item {
-    color: #333333;
-}
-
+ 
 
 

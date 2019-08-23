@@ -11,7 +11,7 @@ const About = props => {
     return (
         <Layout>
             <Head title="O mnie"/>
-            <div className = "text">
+            <div className = "text"> 
         
         <h2>O mnie</h2>
         <h3>Witam serdecznie wszystkich odwiedzających moją stronę.</h3>
@@ -20,8 +20,8 @@ const About = props => {
                             jasna, reportaży, a także  niektórych innych pozycji. Mam nadzieję, że dzięki temu moje filmy nabiorą bardziej osobistego charakteru. Po kliknięciu dowolnej z miniatur, zdjęcia otwierają się w pełnym rozmiarze,a po ponownym kliknięciu
                             wracamy do galerii.<br /> No i na koniec może nieco banalna refleksja, która mi się nasunęła podczas wybierania i przygotowywania tych zdjęć: <em>czasy się zmieniają, a my razem z nimi...</em> </p>
     
-        </div> 
-        <div style = {{ display: 'flex' }}>
+                            </div>
+                            <div>
         <div style={{ maxWidth: `600px`, margin: '2rem .5rem', flex: '1'}}>
       
       <Img fluid={props.data.am13.childImageSharp.fluid} />
@@ -34,12 +34,8 @@ const About = props => {
        <Img fluid={props.data.au15.childImageSharp.fluid} /> 
        </div>
 
-     
-   
-      
         
         </div>
-      
       
          
         </Layout>
@@ -71,3 +67,4 @@ export const pageQuery = graphql`
   }
 `
 
+/* <div style = {{ display: 'flex' }}*/

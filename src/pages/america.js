@@ -28,9 +28,9 @@ const America = () => {
                         <li>
                             <h2>{edge.node.name}</h2>
                             <p>tag: {edge.node.tag}</p>
-                            <figure class="video_container">
+                            
   <iframe src={edge.node.link} width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</figure>
+ 
                             
                         </li>
                     )

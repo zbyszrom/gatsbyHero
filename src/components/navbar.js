@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import '../styles/index.scss'
 
 
-const TestPage = () => {
+const Navbar = () => {
     return (
     <div>    
     <Head title="Hero"/>
@@ -69,4 +69,4 @@ const TestPage = () => {
       
     )
 }
-export default TestPage
+export default Navbar

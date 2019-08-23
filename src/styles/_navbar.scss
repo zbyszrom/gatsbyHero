@@ -1,33 +1,55 @@
-@media all and (max-width: 750px) {  
-    
-    .nav-list {  
-        flex-wrap: wrap;   
-    }  
+.nav__menu {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 12.5%;
     }
-    @media all and (max-width: 600px) {  
-       
-        .nav-list > li {
-        flex-basis: 25%;
-        }   
+    li > ul {
+      display: none;
+      flex-direction: column;
+    }
+    li > ul li {
+      width: 100%;
+    }
+    li:hover > ul {
+      display: flex;
+    }
   }
-  @media all and (max-width: 400px) {  
-       
-    .nav-list > li {
-    flex-basis: 100%;
-    }   
+  a {  
+    display: block;
+    background: blue;
+    padding: .75em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+  a:hover {
+    background: lightBlue;
+    color: blue;
+  }
+  .nav__sub-menu li > a {
+    background: lightBlue;
+    color: blue;
+  }
+  .nav__sub-menu > a:after {
+    content: "+";
+    padding-left: 5px;
+  }
 }
 
 
 
-.nav__menu ul {
-  
-  
-  display: flex;
-  flex-wrap: wrap;
+.nav__menu a:active {
+   background: white; 
+  color: black;
 }
-.nav__menu ul li {
-  width: 12.5%;
+
+.active-nav-item {
+  color: #333333;
 }
+
 @media (max-width: 45em) {
   .nav__menu ul li {
     width: 25%;
@@ -37,35 +59,4 @@
     .nav__menu ul li {
     width: 100%;
   }
-}
-.nav__menu ul li > ul {
-  display: none;
-  flex-direction: column;
-}
-.nav__menu ul li > ul li {
-  width: 100%;
-}
-.nav__menu ul li:hover > ul {
-  display: flex;
-}
-.nav__menu a {
-  
-  display: block;
-  background: blue;
-  padding: .75em;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-.nav__menu a:hover {
-  background: lightBlue;
-  color: blue;
-}
-.nav__menu .nav__sub-menu li > a {
-  background: lightBlue;
-  color: blue;
-}
-.nav__menu .nav__sub-menu > a:after {
-  content: "+";
-  padding-left: 5px;
 }

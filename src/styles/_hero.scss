@@ -34,10 +34,9 @@
     position: absolute;
     top:40%;
     left: 40%;
-       
+
+    &:hover {
+        color: #500c0c;
+    }      
 }
-.hero-title:hover {
-    color: #500c0c;
-    
-   
-}
+
