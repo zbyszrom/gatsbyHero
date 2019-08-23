@@ -22,7 +22,7 @@ const IndexPage = () => {
         <Layout>
          
             <Head title="Strona główna"/>
-            <div className="page">
+           
 
             
             <h2>O moich filmach</h2>
@@ -31,7 +31,7 @@ const IndexPage = () => {
            
            
             <h2>Wybrane filmy</h2>
-                </div>
+               
                         <section >                  
             <ol className="videos">
                 {data.allVideoLinksJson.edges.map((edge) => {

@@ -3,15 +3,18 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import Img from 'gatsby-image'
 import '../styles/index.scss'
+import Am from "../pictures/amsterdam13.jpg" 
+import Au from "../pictures/austria14.jpg" 
+import Pa from "../pictures/paris12.jpg" 
+console.log(Am)
 
 
 
-
-const About = props => {
+const About = () => {
     return (
         <Layout>
             <Head title="O mnie"/>
-            <div className = "text"> 
+            
         
         <h2>O mnie</h2>
         <h3>Witam serdecznie wszystkich odwiedzających moją stronę.</h3>
@@ -20,21 +23,20 @@ const About = props => {
                             jasna, reportaży, a także  niektórych innych pozycji. Mam nadzieję, że dzięki temu moje filmy nabiorą bardziej osobistego charakteru. Po kliknięciu dowolnej z miniatur, zdjęcia otwierają się w pełnym rozmiarze,a po ponownym kliknięciu
                             wracamy do galerii.<br /> No i na koniec może nieco banalna refleksja, która mi się nasunęła podczas wybierania i przygotowywania tych zdjęć: <em>czasy się zmieniają, a my razem z nimi...</em> </p>
     
-                            </div>
-                            <div>
-        <div style={{ maxWidth: `600px`, margin: '2rem .5rem', flex: '1'}}>
-      
-      <Img fluid={props.data.am13.childImageSharp.fluid} />
-      </div>
-      <div style={{ maxWidth: `600px`, margin: '2rem .5rem', flex: '1'}}>
-       <Img fluid={props.data.au14.childImageSharp.fluid} />
-       </div>
-           
-       <div style={{ maxWidth: `600px`, margin: '2rem .5rem', flex: 1}}>
-       <Img fluid={props.data.au15.childImageSharp.fluid} /> 
-       </div>
-
+                           
+                            <div className="pics" >
+     
         
+           <div className="pic">   
+          <img src={Am} alt="Amsterdam"/> 
+          </div>
+          <div className="pic"> 
+           <img src={Au} alt="Austria" />
+           </div>
+           <div className="pic"> 
+           <img src={Pa} alt="Paris" />
+           </div> 
+      
         </div>
       
          
@@ -44,7 +46,7 @@ const About = props => {
 
 export default About 
 
-export const fluidImage = graphql`
+/* export const fluidImage = graphql`
 fragment fluidImage on File {
   childImageSharp {
     fluid(maxWidth: 1000) {
@@ -67,4 +69,5 @@ export const pageQuery = graphql`
   }
 `
 
-/* <div style = {{ display: 'flex' }}*/
+/* <div style = {{ display: 'flex' }}
+flex: 1 */

@@ -1,0 +1,13 @@
+.pics  {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:2rem 0;
+   
+    /*flex-direction: row;*/ 
+}
+.pic {
+    margin: .5rem;
+  
+}

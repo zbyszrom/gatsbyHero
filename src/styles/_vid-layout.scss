@@ -1,10 +1,12 @@
 
 
 .videos  {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: space-around;
+    
     /*flex-direction: row; */
 }
 
