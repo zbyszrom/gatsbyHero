@@ -22,15 +22,16 @@ const Reports = () => {
         <Layout>
             <Head title="Reportaze"/>
             <h1>Reportaze</h1>
-            <ol>
+            <ol className="videos">
                 {data.allVideoLinksJson.edges.map((edge) => {
                     return (
                         <li>
                             <h2>{edge.node.name}</h2>
-                            
-  <iframe src={edge.node.link} width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
                             <p>{edge.node.tag}</p>
+                            
+  <iframe src={edge.node.link} width="480" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+                            
                         </li>
                     )
                 })}
