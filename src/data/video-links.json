@@ -2,78 +2,94 @@
   {
       "name": "Dolomity 2016",
       "link": "https://player.vimeo.com/video/216183546",
-      "tag": "eu"
+      "tag": "eu",
+      "featured": true
   },
   {
     "name": "Tatry 2016 i 2017",
     "link": "https://www.youtube.com/embed/YySqzyfOrwU",
-    "tag": "pl"
+    "tag": "pl",
+    "featured": true
   },
       {
       "name": "USA 2004",
       "link": "https://player.vimeo.com/video/77227391",
-      "tag" : "am"  },
+      "tag" : "am" ,
+      "featured":false
+      },
       {
         "name": "Nike",
         "link": "https://www.youtube.com/embed/JT71Mm3ai8g",
-        "tag": "song"
+        "tag": "song",
+        "featured": true
       },
       {
         "name": "Smoleńsk 2015",
         "link": "https://www.youtube.com/embed/h1GEvLlT8F4",
-        "tag": "rep"
+        "tag": "rep",
+        "featured": true
       },
       
       {
         "name": "Polskie lasy",
         "link": "https://www.youtube.com/embed/JkI7_joUn3E",
-        "tag": "misc"
+        "tag": "misc",
+        "featured": true
       },
       {
         "name": "Pieniny",
         "link": "https://www.youtube.com/embed/MXqG2vwutE8",
-        "tag": "pl"
+        "tag": "pl",
+        "featured": false
       },
       {
         "name": "Andora 2011",
         "link": "https://www.youtube.com/embed/_E-G3gtJbNw",
-        "tag": "eu"
+        "tag": "eu",
+        "featured": false
       },
       {
         "name": "USA i Kanada 2008",
         "link": "https://www.youtube.com/embed/lVsPdDVNyn4",
-        "tag": "am"
+        "tag": "am",
+        "featured": true
       },
       {
         "name": "Przed Dniem Niepodległości 2013",
         "link": "https://www.youtube.com/embed/9a04CN1BF-o",
-        "tag": "rep"
+        "tag": "rep",
+        "featured": false
       },
       {
         "name": "Fields of Gold",
         "link": "https://www.youtube.com/embed/XT47GppjsMU",
-        "tag": "song"
+        "tag": "song",
+        "featured": true
       },
       {
         "name": "Alpy 2014",
         "link": "https://www.youtube.com/embed/Tly2dml-t80",
-        "tag": "eu"
+        "tag": "eu",
+        "featured": true
       },
       {
         "name": "Kanada 2009",
         "link": "https://www.youtube.com/embed/nMIu_8NYiyE",
-        "tag": "am"
+        "tag": "am",
+        "featured": false
       },
       
       {
         "name": "Bieszczady 2011",
         "link": "https://www.youtube.com/embed/ogmu48J3V1U",
-        "tag": "pl"
+        "tag": "pl",
+        "featured": false
       },
       {
         "name": "Marsz 10 kwietnia 2015",
         "link": "https://www.youtube.com/embed/pNoeBWc87M0",
-        "tag": "rep"
+        "tag": "rep",
+        "featured": false
       }
 
          

@@ -6,12 +6,13 @@ import '../styles/index.scss'
 const IndexPage = () => {
     
     const data = useStaticQuery (graphql`
-    query {allVideoLinksJson  {
+    query {allVideoLinksJson (filter: {featured: {eq: true}}) {
         edges {
           node {
             name
             link
             tag
+            featured
             
           }
         }
