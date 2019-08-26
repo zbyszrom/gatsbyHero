@@ -55,7 +55,7 @@ const Navbar = () => {
     <Link to ="album">Album</Link>
     </li>
     <li>
-        <Link to="contact">Kontact</Link>
+        <Link to="contact">Kontakt</Link>
     </li>
   </ul>
 </nav>

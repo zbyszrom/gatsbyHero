@@ -27,9 +27,10 @@ const IndexPage = () => {
 
             
             <h2>O moich filmach</h2>
+            <div className="text">
             <p>Cześć, mam na imię Zbigniew.<br/> Moje hobby to fotografia, krótkie filmy, oraz tłumaczenie piosenek i poezji z angielskiego. <br/>
             Witam serdecznie wszystkich odwiedzających moją stronę</p>
-           
+            </div>   
            
             <h2>Wybrane filmy</h2>
                
@@ -41,7 +42,7 @@ const IndexPage = () => {
                             <h2>{edge.node.name}</h2>
                             <p>tag: {edge.node.tag}</p>
                             
-  <iframe src={edge.node.link} width="480" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe src={edge.node.link}  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
            
                         </li>

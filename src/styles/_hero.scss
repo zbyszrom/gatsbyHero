@@ -43,3 +43,15 @@
     }      
 }
 
+@media (max-width: 45em) {
+    .hero-title {
+      font-size: 4rem;
+    }
+  }
+  @media (max-width: 40em) {
+    .hero-title {
+        font-size: 3rem;
+    }
+  }
+  
+

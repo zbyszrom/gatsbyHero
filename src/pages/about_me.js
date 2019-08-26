@@ -17,13 +17,14 @@ const About = () => {
             
         
         <h2>O mnie</h2>
+        <div className="text">
         <h3>Witam serdecznie wszystkich odwiedzających moją stronę.</h3>
         <p>Tu będzie coś na mój temat <br/>  
         W tym miejscu powinienem napisać coś o sobie. Zamiast tego postanowiłem zamieścić galerię swoich zdjęć wykonanych podczas poszczególnych wypraw - po jednym do każdego filmu. Przegląd ten obejmuje 2011 - 2015 i  nie obejmuje, rzecz
                             jasna, reportaży, a także  niektórych innych pozycji. Mam nadzieję, że dzięki temu moje filmy nabiorą bardziej osobistego charakteru. Po kliknięciu dowolnej z miniatur, zdjęcia otwierają się w pełnym rozmiarze,a po ponownym kliknięciu
                             wracamy do galerii.<br /> No i na koniec może nieco banalna refleksja, która mi się nasunęła podczas wybierania i przygotowywania tych zdjęć: <em>czasy się zmieniają, a my razem z nimi...</em> </p>
     
-                           
+                            </div>                
                             <div className="pics" >
      
         

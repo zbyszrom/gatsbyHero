@@ -27,9 +27,9 @@ const Reports = () => {
                     return (
                         <li>
                             <h2>{edge.node.name}</h2>
-                            <p>{edge.node.tag}</p>
                             
-  <iframe src={edge.node.link} width="480" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            
+  <iframe src={edge.node.link}  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
                             
                         </li>
