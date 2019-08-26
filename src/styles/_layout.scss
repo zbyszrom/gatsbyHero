@@ -44,6 +44,16 @@
   }
   @media (max-width: 40rem) {
     .input {
-        width: 200px;
+        width: 250px;
+    }
+  }
+
+  .center {
+    display:flex;
+    justify-content: center;
+  } 
+  @media (max-width: 40rem) {
+    .center {
+        width: 400px;
     }
   }
