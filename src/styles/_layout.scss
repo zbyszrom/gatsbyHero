@@ -38,12 +38,12 @@
     max-width: 100%;
 }
 @media (max-width: 45rem) {
-    .form-item {
-        max-width: 40rem;
+    .input {
+        width: 400px;
     }
   }
   @media (max-width: 40rem) {
-    .form-item {
-        max-width: 35rem;
+    .input {
+        width: 300px;
     }
   }
