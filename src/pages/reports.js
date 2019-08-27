@@ -20,8 +20,8 @@ const Reports = () => {
       }`)
     return (
         <Layout>
-            <Head title="Reportaze"/>
-            <h1>Reportaze</h1>
+            <Head title="Reportaże"/>
+            <h1>Reportaże</h1>
             <ol className="videos">
                 {data.allVideoLinksJson.edges.map((edge) => {
                     return (

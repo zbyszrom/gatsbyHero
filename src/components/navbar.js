@@ -24,7 +24,7 @@ const Navbar = () => {
     <li className="nav__sub-menu">
     
     
-    <Link to ="/">Podróze</Link>
+    <Link to ="/">Podróże</Link>
     
       
       <ul>
@@ -35,11 +35,11 @@ const Navbar = () => {
     
     </li>
     <li className="nav__sub-menu">
-    <Link to ="/">Rózne</Link>
+    <Link to ="/">Różne</Link>
     
       
       <ul>
-          <li><Link to="reports">Reportaze</Link></li>
+          <li><Link to="reports">Reportaże</Link></li>
           <li><Link to="misc">Inne</Link></li>
       </ul>
     
