@@ -21,7 +21,9 @@ const America = () => {
     return (
         <Layout>
             <Head title="Ameryka"/>
-            <h1>Ameryka Pn.</h1>
+            <h2>Ameryka Pn.</h2>
+            
+            <section>
             <ol className="videos">
                 {data.allVideoLinksJson.edges.map((edge) => {
                     return (
@@ -36,6 +38,7 @@ const America = () => {
                     )
                 })}
             </ol>
+            </section>
         </Layout>
     )
 }
